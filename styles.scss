@@ -1,0 +1,79 @@
+$mainColor: orange;
+$color2: black;
+$color3: rgba(255,255,255,0.8);
+$mainFont: Georgia, 'Times New Roman', Times, serif;
+
+body {
+    background-color: rgb(70, 65, 65);
+}
+
+#menu a, #menu button {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $mainFont;
+}
+
+#menu a {
+    color: $color2;
+ }
+
+#log-reg li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: $color3;
+}
+
+#log-reg a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ .carousel-caption {
+    font-family: $mainFont;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: $color3;
+    color: $color2;
+}
+
+.carousel-caption h5, .carousel p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ #articulos h2 {
+    text-align: center;
+ }
+
+ #articulos a {
+     color: $mainColor;
+ }
+
+section {
+    border: solid $mainColor 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+ }
+
+ footer {
+     background-color: $mainColor;
+     font-size: 18px;
+     font-weight: bold;
+     text-align: center;
+     font-family: $mainFont;
+     margin: 20px;
+     padding: 20px;
+     color: $color2;
+ }
+
+ footer a, footer p {
+     color: $color2;
+ }
+
+ footer p {
+     padding-top: 10px;
+ }

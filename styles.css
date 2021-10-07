@@ -1,0 +1,75 @@
+body {
+  background-color: #464141;
+}
+
+#menu a, #menu button {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#menu a {
+  color: black;
+}
+
+#log-reg li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#log-reg a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-caption {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.carousel-caption h5, .carousel p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#articulos h2 {
+  text-align: center;
+}
+
+#articulos a {
+  color: orange;
+}
+
+section {
+  border: solid orange 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: orange;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 20px;
+  color: black;
+}
+
+footer a, footer p {
+  color: black;
+}
+
+footer p {
+  padding-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

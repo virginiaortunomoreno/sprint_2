@@ -1,0 +1,6 @@
+{
+    "liveSassCompile.settings.excludeList": [
+    "#/definitions/common/properties/preLaunchTask"
+        ".vscode/**"
+    ]
+}

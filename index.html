@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virginia Ortuño</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="node_modules/bootstrap-scss/bootstrap.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success" href="index.html" id="logo"><img src="images/logo.jpg" alt="logo" width="100px" height="70px" class="rounded-pill"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="mr-lg-left">
+            <div class="user-nav" id="log-reg">
+                <ul class="clearfix loggedout t-loggedout">
+                    <li class="login rounded me-1">
+                        <a class="login" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
+                    </li>
+                    <li class="registro rounded me-1">
+                        <a class="registro" data-bs-toggle="modal" data-bs-target="#RegistroModal">Registro</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Viajes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guías</a></li>
+                  <li><a class="dropdown-item" href="#">Consejos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Últimas publicaciones</a></li>
+                </ul>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mí</a>
+              </li>
+            </ul>
+
+           <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn-dark btn-dark-outline-success rounded" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Correo electrónico" aria-label="Correo electrónico">
+                    <input class="form-control me-2" type="search" placeholder="Contraseña" aria-label="Contraseña">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Acceder</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Usuario" aria-label="Usuario">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Correo electrónico" aria-label="Correo electrónico">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Contraseña" aria-label="Contraseña">
+                    <input class="form-control me-2" type="search" placeholder="Introduce de nuevo tu contraseña" aria-label="Introduce de nuevo tu contraseña">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Registrar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="carrusel">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/sydney.jpg" class="d-block w-100" alt="sydney">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 text-center>AUSTRALIA 2015</h5>
+                <p text-center>- Sydney -</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/kirkjufellfoss.jpg" class="d-block w-100" alt="kirkjufell">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 text-center>ISLANDIA 2016</h5>
+                <p text-center>- Kirkjufellfoss-</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/moraine-lake.jpg" class="d-block w-100" alt="moraine-lake">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 text-center>CANADÁ 2017</h5>
+                <p text-center>- Moraine Lake -</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/taj-mahal.jpg" class="d-block w-100" alt="taj-mahal">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>INDIA 2018</h5>
+                <p>- Taj Mahal -</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/Chefchaouen.jpg" class="d-block w-100" alt="chefchaouen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 text-center>MARRUECOS 2019</h5>
+                <p text-center>- Chefchaouen -</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+<div class="container text-light mt-5" id="articulos">
+    <h2>Últimos artículos</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-6">
+            <section class="articulo1">
+                <h3>Artículo 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Voluptatem necessitatibus fuga sit tempora error provident expedita, molestias velit, nulla alias dolor! 
+                Explicabo quibusdam repudiandae nemo pariatur commodi odio ab impedit!</p>
+                <a href="#">Seguir leyendo</a>
+            </section>
+        </div>
+        <div class="col-12 col-md-6 col-xl-6">
+            <section class="articulo2">
+                <h3>Artículo 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Voluptatem necessitatibus fuga sit tempora error provident expedita, molestias velit, nulla alias dolor! 
+                Explicabo quibusdam repudiandae nemo pariatur commodi odio ab impedit!</p>
+                <a href="#">Seguir leyendo</a>
+            </section>
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-6">
+            <section class="articulo3">
+                <h3>Artículo 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Voluptatem necessitatibus fuga sit tempora error provident expedita, molestias velit, nulla alias dolor! 
+                Explicabo quibusdam repudiandae nemo pariatur commodi odio ab impedit!</p>
+                <a href="#">Seguir leyendo</a>
+            </section>
+        </div>
+        <div class="col-12 col-md-6 col-xl-6">
+            <section class="articulo4">
+                <h3>Artículo 4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Voluptatem necessitatibus fuga sit tempora error provident expedita, molestias velit, nulla alias dolor! 
+                Explicabo quibusdam repudiandae nemo pariatur commodi odio ab impedit!</p>
+                <a href="#">Seguir leyendo</a>
+            </section>
+        </div> 
+    </div>
+</div>
+
+<footer>
+    <a href="#">Contacto</a>
+    <p>Copyright © 2021 | www.virginiaortuño.com · Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
